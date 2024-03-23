@@ -6,6 +6,15 @@
                L'atelier du<span class="text-primary"> codage </span>
          </a>
 
+         <img class="absolute -top-[25%] -left-[10%] max-md:top-0 h-80 w-80 max-md:h-36 max-md:w-36"
+         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+      <img class="absolute bottom-[10%] left-[25%] h-24 w-24 max-md:h-12 max-md:w-12"
+         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+      <img class="absolute -top-[20%] max-xl:-top-[10%] right-[40%] max-sm:-top-[21%] h-40 w-40 max-md:h-20 max-md:w-20"
+         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+      <img class="absolute -bottom-[0%] -right-[10%] h-96 w-96 max-md:h-48 max-md:w-48 overflow-y-hidden"
+         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+
          <ul id="mobile-nav-menu"
                class="flex gap-3 items-center max-md:fixed max-md:flex-col max-md:h-screen max-md:w-[65vw] max-md:py-12 max-md:gap-6 max-md:bg-white max-md:z-30 max-md:top-0 max-md:-left-full transition-all relative">
                <button id="mobile-nav-cross" onclick="toggleMobileNav()"
@@ -14,23 +23,24 @@
                </button>
                <li>
                   <a class="mx-2 underline-offset-0 hover:underline hover:underline-offset-2 transition-all"
-                     href="/realisations">Réalisations</a>
+                     href="#" @click="realisations">
+                     Réalisations</a>
                </li>
                <li>
                   <a class="mx-2 underline-offset-0 hover:underline hover:underline-offset-2 transition-all"
-                     href="/expertise">
+                     href="#" @click="expertise">
                      Expertise
                   </a>
                </li>
                <li>
                   <a class="mx-2 underline-offset-0 hover:underline hover:underline-offset-2 transition-all"
-                     href="/tarifs">
+                     href="#" @click="tarifs">
                      Tarifs
                   </a>
                </li>
                <li>
                   <a class="mx-2 underline-offset-0 hover:underline hover:underline-offset-2 transition-all"
-                     href="/contact">
+                     href="#" @click="contact">
                      Contact
                   </a>
                </li>
@@ -46,27 +56,37 @@
 
       </nav>
 
-      <main class="container text-center py-24 max-sm:py-8">
-
-         <h3>
-               Une <span class="text-primary">micro-agence</span> pour créer <span class="text-primary">sur
-                  mesure</span> votre
-         </h3>
-         <h1>
-               Application Mobile ou Web
-         </h1>
-
+      <!-- title -->
+      <main class="container text-center py-24 max-sm:py-8"  v-html="htmlTitle">
       </main>
-
-      <img class="absolute -top-[25%] -left-[10%] max-md:top-0 h-80 w-80 max-md:h-36 max-md:w-36"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
-      <img class="absolute bottom-[10%] left-[25%] h-24 w-24 max-md:h-12 max-md:w-12"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
-      <img class="absolute -top-[20%] max-xl:-top-[10%] right-[40%] max-sm:-top-[21%] h-40 w-40 max-md:h-20 max-md:w-20"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
-      <img class="absolute -bottom-[0%] -right-[10%] h-96 w-96 max-md:h-48 max-md:w-48 overflow-y-hidden"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
 
    </header>
 
 </template>
+
+<script setup>
+import { useTitle } from '/src/useTitle.js'
+import router from "/src/router"
+
+const { htmlTitle } = useTitle()
+
+const realisations = () => {
+   htmlTitle.value = "<h1>Réalisations</h1>"
+   router.push('/realisations')
+}
+
+const expertise = () => {
+   htmlTitle.value = "<h1>Expertise</h1>"
+   router.push('/expertise')
+}
+
+const tarifs = () => {
+   htmlTitle.value = "<h1>Tarifs</h1>"
+   router.push('/tarifs')
+}
+
+const contact = () => {
+   htmlTitle.value = "<h1>CONTACT</h1>"
+   router.push('/contact')
+}
+</script>
