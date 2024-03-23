@@ -303,6 +303,16 @@
                         <p class="max-sm:text-xs">Chef de projet & développeur</p>
                     </div>
                 </div>
+                <div class="flex gap-4 max-sm:gap-2 items-center">
+                    <img class="h-24 w-24 max-sm:h-12 max-sm:w-12 border-2 max-sm:border border-primary rounded-full"
+                        src="/src/imgs/members/reda.png" alt="team-member">
+                    <div class="">
+                        <h6 class="max-sm:text-xs">
+                            Réda
+                        </h6>
+                        <p class="max-sm:text-xs">Développeur</p>
+                    </div>
+                </div>
             </div>
             <!-- about -->
             <div class="flex gap-4">
