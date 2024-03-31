@@ -7,20 +7,26 @@
          </a>
 
          <img class="absolute -top-[25%] -left-[10%] max-md:top-0 h-80 w-80 max-md:h-36 max-md:w-36"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
-      <img class="absolute bottom-[10%] left-[25%] h-24 w-24 max-md:h-12 max-md:w-12"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
-      <img class="absolute -top-[20%] max-xl:-top-[10%] right-[40%] max-sm:-top-[21%] h-40 w-40 max-md:h-20 max-md:w-20"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
-      <img class="absolute -bottom-[0%] -right-[10%] h-96 w-96 max-md:h-48 max-md:w-48 overflow-y-hidden"
-         src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+            src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+         <img class="absolute bottom-[10%] left-[25%] h-24 w-24 max-md:h-12 max-md:w-12"
+            src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+         <img class="absolute -top-[20%] max-xl:-top-[10%] right-[40%] max-sm:-top-[21%] h-40 w-40 max-md:h-20 max-md:w-20"
+            src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
+         <img class="absolute -bottom-[0%] -right-[10%] h-96 w-96 max-md:h-48 max-md:w-48 overflow-y-hidden"
+            src="/src/imgs/pink-polygon.svg" alt="pink-polygon">
 
          <ul id="mobile-nav-menu"
                class="flex gap-3 items-center max-md:fixed max-md:flex-col max-md:h-screen max-md:w-[65vw] max-md:py-12 max-md:gap-6 max-md:bg-white max-md:z-30 max-md:top-0 max-md:-left-full transition-all relative">
-               <button id="mobile-nav-cross" onclick="toggleMobileNav()"
+               <button id="mobile-nav-cross" @click="toggleMobileNav()"
                   class="md:hidden z-20 fixed left-0 top-0 py-4 container hidden">
                   <img class="h-6 w-6" src="/src/imgs/mobile-nav-cross.svg" alt="mobile-nav-menu">
                </button>
+
+               <li>
+                  <a class="mx-2 underline-offset-0 hover:underline hover:underline-offset-2 transition-all"
+                     href="#" @click="accueil">
+                     Accueil</a>
+               </li>
                <li>
                   <a class="mx-2 underline-offset-0 hover:underline hover:underline-offset-2 transition-all"
                      href="#" @click="realisations">
@@ -46,11 +52,11 @@
                </li>
          </ul>
 
-         <div onclick="toggleMobileNav()" id="mobile-nav-menu-blank"
+         <div @click="toggleMobileNav" id="mobile-nav-menu-blank"
                class="md:hidden h-screen w-[35vw] fixed top-0 right-full bg-accent/50 transition-all">
          </div>
 
-         <button onclick="toggleMobileNav()" class="md:hidden z-20">
+         <button @click="toggleMobileNav" class="md:hidden z-20">
                <img class="h-5 w-5" src="/src/imgs/mobile-nav-menu.svg" alt="mobile-nav-menu">
          </button>
 
@@ -70,23 +76,60 @@ import router from "/src/router"
 
 const { htmlTitle } = useTitle()
 
+const accueil = () => {
+   toggleMobileNav()
+   htmlTitle.value = `
+   <h3>
+      Une <span class="text-primary">micro-agence</span> pour créer <span class="text-primary">sur
+      mesure</span> votre
+   </h3>
+   <h1>
+      Application Mobile ou Web
+   </h1>`
+   router.push('/')
+}
+
 const realisations = () => {
+   toggleMobileNav()
    htmlTitle.value = "<h1>Réalisations</h1>"
    router.push('/realisations')
 }
 
 const expertise = () => {
+   toggleMobileNav()
    htmlTitle.value = "<h1>Expertise</h1>"
    router.push('/expertise')
 }
 
 const tarifs = () => {
+   toggleMobileNav()
    htmlTitle.value = "<h1>Tarifs</h1>"
    router.push('/tarifs')
 }
 
 const contact = () => {
+   toggleMobileNav()
    htmlTitle.value = "<h1>CONTACT</h1>"
    router.push('/contact')
+}
+
+let isNavOpen = false;
+
+function toggleMobileNav() {
+   const navMenu = document.getElementById('mobile-nav-menu');
+   const navMenuBlank = document.getElementById('mobile-nav-menu-blank');
+   const mobileNavCross = document.getElementById('mobile-nav-cross');
+
+   if (isNavOpen) {
+      isNavOpen = false;
+      navMenu.style.left = '-100%';
+      navMenuBlank.style.right = '100%';
+      mobileNavCross.style.display = 'none';
+   } else {
+      isNavOpen = true;
+      navMenu.style.left = 0;
+      navMenuBlank.style.right = 0;
+      mobileNavCross.style.display = 'block';
+   }
 }
 </script>
