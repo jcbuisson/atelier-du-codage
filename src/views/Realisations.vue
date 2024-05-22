@@ -268,7 +268,6 @@
                 <p class="text-lg max-sm:text-base">
                     Application de visio-communication pour personnes âgées.<br/>
                     Elle fonctionne sous forme de Progressive Web App et utilise le protocole WebRTC et les Push notifications.<br/>
-                    40000 licences de cette application ont été vendues à La Poste.
                 </p>
             </div>
         </div>

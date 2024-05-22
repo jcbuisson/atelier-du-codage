@@ -78,7 +78,7 @@
                 SVG
             </h5>
             <h6>
-                Des dessins interactifs pour le web
+                Des schémas interactifs pour le web
             </h6>
             <p>
                 SVG (Scalable Vector Graphics) est une technologie permettant de créer des graphiques vectoriels dynamiques et interactifs pour le web.
