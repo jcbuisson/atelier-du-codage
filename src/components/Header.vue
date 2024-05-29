@@ -1,6 +1,6 @@
 <template>
 
-   <nav class="fixed w-full z-20 top-0 left-0">
+   <nav class="bg-white fixed w-full z-20 top-0 left-0">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
          <!-- <a href="https://formation-fullstack.fr" class="flex items-center">
             <img src="https://www.formation-fullstack.fr/logo320x462.png" class="h-8 mr-3">
