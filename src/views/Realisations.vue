@@ -1,10 +1,17 @@
 <template>
 
-<section class="container  py-20 max-lg:py-10">
+   <section class="container  py-20 max-lg:py-10">
 
-    <!-- Food-Admin -->
-    <div class="flex max-lg:flex-col-reverse gap-6 w-full">
-        <div class="w-full flex flex-col gap-8 max-sm:gap-2">
+      <!-- Food-Admin -->
+      <div class="w-full">
+
+         <h1>
+               Food-Admin
+            </h1>
+
+      <div class="flex max-lg:flex-col-reverse gap-6 w-full">
+
+         <div class="w-full flex flex-col gap-8 max-sm:gap-2">
 
             <!-- members -->
             <div class="flex flex-col max-lg:flex-row max-lg:justify-between gap-6">
@@ -48,9 +55,6 @@
                 
             <!-- description -->
             <div>
-                <h6>
-                    Food-Admin
-                </h6>
                 <p class="text-lg">
                     Cette application a été réalisée dans une coopération avec les services de diabétologie et de nutrition
                     des Hôpitaux de Toulouse.<br/>
@@ -75,7 +79,7 @@
         <div class="w-full h-0.5 bg-zinc-300"></div>
     </div>
 
-
+</div>
 
 <!-- SolucesDAO -->
 <div class="w-full">
