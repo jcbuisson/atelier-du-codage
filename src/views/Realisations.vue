@@ -1,5 +1,88 @@
 <template>
   <section class="container py-20 max-lg:py-10">
+
+    
+    <!-- Nutri-Expert -->
+    <div class="w-full">
+      <h4 class="py-4">Nutri-Expert</h4>
+
+      <div class="flex max-lg:flex-col-reverse gap-6 w-full">
+        <div
+          class="w-4/12 max-xl:w-5/12 max-lg:w-full flex flex-col gap-8 max-sm:gap-2"
+        >
+          <!-- members -->
+          <div
+            class="flex flex-col max-lg:flex-row max-lg:justify-between gap-6"
+          >
+            <div class="flex gap-4 max-sm:gap-2 items-center">
+              <img
+                class="h-24 w-24 max-sm:h-12 max-sm:w-12 border-2 max-sm:border border-primary rounded-full"
+                src="/src/imgs/members/jean-christophe.png"
+                alt="team-member"
+              />
+              <div class="">
+                <h6 class="max-sm:text-xs">Jean-Christophe</h6>
+                <p class="max-sm:text-xs">Chef de projet & développeur</p>
+              </div>
+            </div>
+          </div>
+          <!-- about -->
+          <div class="flex gap-4">
+            <span class="flex gap-2 items-center">
+              <img
+                class="w-5 h-5"
+                src="/src/imgs/calendar-vector.svg"
+                alt="calendar"
+              />
+              <p class="max-sm:text-xs">12/2022 - 06/2023</p>
+            </span>
+            <span class="flex gap-2 items-center">
+              <img
+                class="w-5 h-5"
+                src="/src/imgs/person-vector.svg"
+                alt="person"
+              />
+              <p class="max-sm:text-xs">Hôpitaux de Toulouse</p>
+            </span>
+          </div>
+
+          <div>
+            <p class="text-lg">
+              Nutri-Expert a été développé dans une collaboration avec les
+              services de Diabétologie et de Nutrition des Hôpitaux de
+              Toulouse.<br />
+              Il utilise un algorithme de recherche heuristiquement ordonnée
+              pour "réparer" les repas, c'est à dire trouver les actions qui
+              vont le rendre équilibré.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-8/12 max-xl:w-7/12 max-lg:w-full">
+          <img class="w-full" src="/src/imgs/project-1.png" alt="project-1" />
+        </div>
+      </div>
+
+      <p class="py-4 text-lg max-sm:text-base">
+        Nutri-Expert utilise également la Théorie des Possibilités pour
+        modéliser l'imprécision des données et la propager dans les calculs. En
+        nutrition de nombreuses valeurs peuvent être imprécisément définies :
+        poids des portions, valeurs nutritionnelles des aliments. En intégrant
+        cette imprécision dans les calculs à l'aide d'un modèle solide, on la
+        prend en compte sans la caricaturer. Des gauges spécifiques permettent
+        de visualiser les résultats.<br />
+        L'efficacité médicale de Nutri-Expert a été validée par des protocoles
+        médicaux randomisés.<br />
+        Nutri-Expert a été industrialisé dans le cadre d'une certification CE
+        médical classe 2.
+      </p>
+    </div>
+
+    <div class="mt-8 mb-14">
+      <div class="w-full h-0.5 bg-zinc-300"></div>
+    </div>
+
+
     <!-- Food-Admin -->
     <div class="w-full">
       <h4 class="py-4">Food-Admin</h4>
@@ -86,6 +169,7 @@
         <div class="w-full h-0.5 bg-zinc-300"></div>
       </div>
     </div>
+
 
     <!-- SolucesDAO -->
     <div class="w-full">
@@ -174,85 +258,6 @@
       <div class="w-full h-0.5 bg-zinc-300"></div>
     </div>
 
-    <!-- Nutri-Expert -->
-    <div class="w-full">
-      <h4 class="py-4">Nutri-Expert</h4>
-
-      <div class="flex max-lg:flex-col-reverse gap-6 w-full">
-        <div
-          class="w-4/12 max-xl:w-5/12 max-lg:w-full flex flex-col gap-8 max-sm:gap-2"
-        >
-          <!-- members -->
-          <div
-            class="flex flex-col max-lg:flex-row max-lg:justify-between gap-6"
-          >
-            <div class="flex gap-4 max-sm:gap-2 items-center">
-              <img
-                class="h-24 w-24 max-sm:h-12 max-sm:w-12 border-2 max-sm:border border-primary rounded-full"
-                src="/src/imgs/members/jean-christophe.png"
-                alt="team-member"
-              />
-              <div class="">
-                <h6 class="max-sm:text-xs">Jean-Christophe</h6>
-                <p class="max-sm:text-xs">Chef de projet & développeur</p>
-              </div>
-            </div>
-          </div>
-          <!-- about -->
-          <div class="flex gap-4">
-            <span class="flex gap-2 items-center">
-              <img
-                class="w-5 h-5"
-                src="/src/imgs/calendar-vector.svg"
-                alt="calendar"
-              />
-              <p class="max-sm:text-xs">12/2022 - 06/2023</p>
-            </span>
-            <span class="flex gap-2 items-center">
-              <img
-                class="w-5 h-5"
-                src="/src/imgs/person-vector.svg"
-                alt="person"
-              />
-              <p class="max-sm:text-xs">Hôpitaux de Toulouse</p>
-            </span>
-          </div>
-
-          <div>
-            <p class="text-lg">
-              Nutri-Expert a été développé dans une collaboration avec les
-              services de Diabétologie et de Nutrition des Hôpitaux de
-              Toulouse.<br />
-              Il utilise un algorithme de recherche heuristiquement ordonnée
-              pour "réparer" les repas, c'est à dire trouver les actions qui
-              vont le rendre équilibré.
-            </p>
-          </div>
-        </div>
-
-        <div class="w-8/12 max-xl:w-7/12 max-lg:w-full">
-          <img class="w-full" src="/src/imgs/project-1.png" alt="project-1" />
-        </div>
-      </div>
-
-      <p class="py-4 text-lg max-sm:text-base">
-        Nutri-Expert utilise également la Théorie des Possibilités pour
-        modéliser l'imprécision des données et la propager dans les calculs. En
-        nutrition de nombreuses valeurs peuvent être imprécisément définies :
-        poids des portions, valeurs nutritionnelles des aliments. En intégrant
-        cette imprécision dans les calculs à l'aide d'un modèle solide, on la
-        prend en compte sans la caricaturer. Des gauges spécifiques permettent
-        de visualiser les résultats.<br />
-        L'efficacité médicale de Nutri-Expert a été validée par des protocoles
-        médicaux randomisés.<br />
-        Nutri-Expert a été industrialisé dans le cadre d'une certification CE
-        médical classe 2.
-      </p>
-    </div>
-
-    <div class="mt-8 mb-14">
-      <div class="w-full h-0.5 bg-zinc-300"></div>
-    </div>
 
     <!-- MyTab -->
     <div class="w-full">
