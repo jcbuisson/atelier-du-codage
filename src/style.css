@@ -54,4 +54,7 @@
   .primary-btn {
     @apply bg-primary text-white py-2 px-4 rounded-full;
   }
+  .highlight-link {
+    @apply underline underline-offset-2;
+  }
 }
