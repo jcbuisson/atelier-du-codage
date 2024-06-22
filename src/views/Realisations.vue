@@ -3,6 +3,7 @@
 
     
     <!-- Nutri-Expert -->
+    <div id="nutri-expert"></div>
     <div class="w-full">
       <h4 class="py-4">Nutri-Expert</h4>
 
@@ -78,12 +79,11 @@
       </p>
     </div>
 
-    <div class="mt-8 mb-14">
-      <div class="w-full h-0.5 bg-zinc-300"></div>
-    </div>
-
 
     <!-- Food-Admin -->
+    <div id="food-admin"></div>
+    <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
+
     <div class="w-full">
       <h4 class="py-4">Food-Admin</h4>
 
@@ -164,14 +164,13 @@
           alt="food-admin"
         />
       </div>
-
-      <div class="mt-8 mb-14">
-        <div class="w-full h-0.5 bg-zinc-300"></div>
-      </div>
     </div>
 
 
     <!-- SolucesDAO -->
+    <div id="solucesdao"></div>
+    <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
+
     <div class="w-full">
       <h4 class="py-4">Pointage horaire</h4>
 
@@ -254,12 +253,11 @@
       </p>
     </div>
 
-    <div class="mt-8 mb-14">
-      <div class="w-full h-0.5 bg-zinc-300"></div>
-    </div>
-
 
     <!-- MyTab -->
+    <div id="mytab"></div>
+    <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
+
     <div class="w-full">
       <h4 class="py-4">MyTab</h4>
 
@@ -327,16 +325,14 @@
           <img class="w-full" src="/src/imgs/projects/mytab1.jpg" alt="mytab" />
         </div>
       </div>
-
-      <!-- <p class="py-4 text-lg max-sm:text-base">
-    </p> -->
     </div>
 
-    <div class="mt-8 mb-14">
-      <div class="w-full h-0.5 bg-zinc-300"></div>
-    </div>
+
 
     <!-- Live-Anatomy -->
+    <div id="live-anatomy"></div>
+    <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
+
     <div class="w-full">
       <h4 class="py-4">Live-Anatomy</h4>
 
@@ -419,11 +415,12 @@
       </p>
     </div>
 
-    <div class="mt-8 mb-14">
-      <div class="w-full h-0.5 bg-zinc-300"></div>
-    </div>
+
 
     <!-- MHLink -->
+    <div id="mhlink"></div>
+    <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
+
     <div class="w-full">
       <h4 class="py-4">MHLink</h4>
 
@@ -493,11 +490,12 @@
     </p> -->
     </div>
 
-    <div class="mt-8 mb-14">
-      <div class="w-full h-0.5 bg-zinc-300"></div>
-    </div>
+
 
     <!-- Diabphone -->
+    <div id="diabphone"></div>
+    <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
+
     <div class="w-full">
       <h4 class="py-4">Diabphone</h4>
 
