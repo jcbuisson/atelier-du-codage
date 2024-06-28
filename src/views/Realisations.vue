@@ -254,12 +254,12 @@
     </div>
 
 
-    <!-- MyTab -->
+    <!-- MiTab -->
     <div id="mytab"></div>
     <div class="w-full h-0.5 bg-zinc-300 mt-8 mb-14"></div>
 
     <div class="w-full">
-      <h4 class="py-4">MyTab</h4>
+      <h4 class="py-4">MiTab</h4>
 
       <div class="flex max-lg:flex-col-reverse gap-6 w-full">
         <div

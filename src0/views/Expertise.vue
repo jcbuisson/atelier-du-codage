@@ -19,7 +19,7 @@
                 à jour leur contenu en direct
             </p>
             <h6>
-                Projets : <span class="text-primary">Pointage, MyTab, LiveAnatomy</span>
+                Projets : <span class="text-primary">Pointage, MiTab, LiveAnatomy</span>
             </h6>
         </div>
     </div>
@@ -40,7 +40,7 @@
                 Elles offrent une installation rapide, une utilisation hors ligne et des notifications push, sur mobiles, tablettes et ordinateurs de bureau.
                 Les PWA ne nécessitent pas de téléchargement depuis les app stores traditionnels, ce qui simplifie leur distribution et leur mise à jour.            </p>
             <h6>
-                Projets : <span class="text-primary">Pointage, MyTab</span>
+                Projets : <span class="text-primary">Pointage, MiTab</span>
             </h6>
         </div>
     </div>

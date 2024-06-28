@@ -222,7 +222,7 @@
     <div class="w-full h-0.5 bg-zinc-300"></div>
 </div>
 
-<!-- MyTab -->
+<!-- MiTab -->
 <div class="w-full">
     <div class="flex max-lg:flex-col-reverse gap-6 w-full">
         <div class="w-4/12 max-xl:w-5/12 max-lg:w-full flex flex-col gap-8 max-sm:gap-2">
@@ -267,7 +267,7 @@
                 
             <div>
                 <h6>
-                    MyTab
+                    MiTab
                 </h6>
                 <p class="text-lg max-sm:text-base">
                     Application de visio-communication pour personnes âgées.<br/>

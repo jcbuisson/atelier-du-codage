@@ -22,7 +22,7 @@
           </p>
           <h6>
             Projets :
-            <span class="text-primary">Pointage, MyTab, LiveAnatomy</span>
+            <span class="text-primary">Pointage, MiTab, LiveAnatomy</span>
           </h6>
         </div>
       </div>
@@ -48,7 +48,7 @@
             traditionnels, ce qui simplifie leur distribution et leur mise à
             jour.
           </p>
-          <h6>Projets : <span class="text-primary">Pointage, MyTab</span></h6>
+          <h6>Projets : <span class="text-primary">Pointage, MiTab</span></h6>
         </div>
       </div>
 
