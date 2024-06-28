@@ -317,15 +317,6 @@
               Application de visio-communication pour personnes âgées.<br />
               Elle fonctionne sous forme de Progressive Web App et utilise le
               protocole WebRTC et les Push notifications.<br />
-              L'application fonctionne sur tablette pour les bénéficiaires âgés, et sur mobile pour l'entourage et les aidants.<br />
-
-Les personnes de l'entourage peuvent entrer en communication audio avec le bénéficiaire, puis en communication audio-vidéo<br />
-si le bénéficiaire donne son accord ou en cas d'urgence.
-
-En cas d'urgence, une url peut être générée et envoyée aux services de secours pour leur permettre d'entrer en communication vidéo et audio.<br />
-
-L'application est adaptée à un fonctionnement familial ou en institution de type EPADH.
-
             </p>
           </div>
         </div>
@@ -334,6 +325,17 @@ L'application est adaptée à un fonctionnement familial ou en institution de ty
           <img class="w-full" src="/src/imgs/projects/mytab1.jpg" alt="mytab" />
         </div>
       </div>
+
+      <p class="py-4 text-lg max-sm:text-base">
+        L'application fonctionne sur tablette pour les bénéficiaires âgés, et sur mobile pour l'entourage et les aidants.<br />
+
+        Les personnes de l'entourage peuvent entrer en communication audio avec le bénéficiaire, puis en communication audio-vidéo<br />
+        si le bénéficiaire donne son accord ou en cas d'urgence.
+
+        En cas d'urgence, une url peut être générée et envoyée aux services de secours pour leur permettre d'entrer en communication vidéo et audio.<br />
+
+        L'application est adaptée à un fonctionnement familial ou en institution de type EPADH.
+      </p>
     </div>
 
 
