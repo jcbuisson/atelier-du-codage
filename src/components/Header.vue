@@ -8,7 +8,8 @@
         href="#"
         @click="accueil"
       >
-        L'atelier du<span class="text-primary"> codage </span>
+        <!-- L'atelier du<span class="text-primary"> codage </span> -->
+        La compagnie des<span class="text-primary"> codeurs </span>
       </a>
 
       <div
